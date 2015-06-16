@@ -1,0 +1,26 @@
+var btn = document.getElementById("btn");        //variable for fizzbuzz button
+
+btn.addEventListener("click", function fizzBuzz() {       //event lisenter for when button is clicked
+// Fizz Buzz
+for(var i = 1; i <= 20; i++){						//for loop to check numbers
+	var ul = document.getElementById("list");		//variables for ul and li elements
+	var li = document.createElement("li");
+	li.setAttribute("class", "list");				//set li elements to ul
+	if(i % 3 == 0 && i % 5 == 0) {					
+		
+		li.innerHTML = "Fizz Buzz";
+	}else if (i % 3 == 0) {
+		
+		li.innerHTML = "Fizz";
+	}else if(i % 5 == 0) {
+		
+		li.innerHTML = "Buzz";
+	}else {
+		
+		li.innerHTML = i;
+	};
+
+	ul.appendChild(li);								//add each number to ul
+	};
+	btn.removeEventListener("click", fizzBuzz);		//remove evernt listener after function runs
+});
