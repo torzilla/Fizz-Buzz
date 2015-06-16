@@ -95,6 +95,7 @@ html, body {
 	color: black;
 	position: relative;
 	left: 37.5%;
+	margin-bottom: 3%;
 	
 	width: 10%;
 	
@@ -106,6 +107,3 @@ html, body {
 	padding-top: 0.75%;
 }
 
-#list li:last-child {
-	padding-bottom: 2.5%;
-}
